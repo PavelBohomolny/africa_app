@@ -31,6 +31,7 @@
 		FA59BC7E2859DF580080A276 /* lioness.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FA59BC742859DF580080A276 /* lioness.mp4 */; };
 		FA59BC812859E2510080A276 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59BC802859E2510080A276 /* CoverImageView.swift */; };
 		FA59BC842859E8020080A276 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59BC832859E8020080A276 /* CoverImageModel.swift */; };
+		FA59BC87285B2D100080A276 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59BC86285B2D100080A276 /* CodableBundleExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FA59BC742859DF580080A276 /* lioness.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lioness.mp4; sourceTree = "<group>"; };
 		FA59BC802859E2510080A276 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
 		FA59BC832859E8020080A276 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		FA59BC86285B2D100080A276 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,9 @@
 		FA59BC3328589E0E0080A276 /* Africa */ = {
 			isa = PBXGroup;
 			children = (
+				FA59BC85285B2CE60080A276 /* Extension */,
 				FA59BC822859E7E10080A276 /* Model */,
-				FA59BC7F2859E2340080A276 /* Vue */,
+				FA59BC7F2859E2340080A276 /* View */,
 				FA59BC6A2859DF380080A276 /* Video */,
 				FA59BC572859D8D50080A276 /* Data */,
 				FA59BC612859DAD40080A276 /* App */,
@@ -153,12 +156,12 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
-		FA59BC7F2859E2340080A276 /* Vue */ = {
+		FA59BC7F2859E2340080A276 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				FA59BC802859E2510080A276 /* CoverImageView.swift */,
 			);
-			path = Vue;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FA59BC822859E7E10080A276 /* Model */ = {
@@ -167,6 +170,14 @@
 				FA59BC832859E8020080A276 /* CoverImageModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FA59BC85285B2CE60080A276 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA59BC86285B2D100080A276 /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 				FA59BC3528589E0E0080A276 /* AfricaApp.swift in Sources */,
 				FA59BC632859DB460080A276 /* VideoListView.swift in Sources */,
 				FA59BC672859DB830080A276 /* GalleryView.swift in Sources */,
+				FA59BC87285B2D100080A276 /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
