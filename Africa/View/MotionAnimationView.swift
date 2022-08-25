@@ -13,7 +13,7 @@ struct MotionAnimationView: View {
     @State private var isAnimating: Bool = false
     
     func randomCoordinate(max: CGFloat) -> CGFloat {
-        return CGFloat.random(in: 0...max)
+      return CGFloat(CGFloat.random(in: 0...1) * max)
     }
     
     func randomSize() -> CGFloat {
@@ -45,18 +45,18 @@ struct MotionAnimationView: View {
                             x: randomCoordinate(max: geometry.size.width),
                             y: randomCoordinate(max: geometry.size.height)
                         )
-                        .animation(
-                            Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
-                                .repeatForever()
-                                .speed(randomSpeed())
-                                .delay(randomDelay())
-                        )
+                        .animation(Animation
+                            .interpolatingSpring(stiffness: 0.5, damping: 0.5)
+                            .repeatForever()
+                            .speed(randomSpeed())
+                            .delay(randomDelay()),
+                                   value: isAnimating)
                         .onAppear(perform: {
                             isAnimating = true
-                        }
-                        )
+                        })
                 }
             }
+            .drawingGroup()
         }
     }
 }
